@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&family=Space+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-size: 14px;
+  user-select: none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+header {
+  h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Inconsolata", monospace;
+
+    margin: 1rem 0 0 1rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+    h2 {
+      margin: 2rem 0 0 3rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    h2 {
+      margin: 2rem 0 0 5rem;
+    }
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+
+  img {
+    width: 20rem;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    min-width: 250px;
+    max-width: 1100px;
+
+    padding: 0 20px;
+
+    margin: 5rem 0;
+  }
+
+  .text {
+    margin-top: 3rem;
+    font-family: "Space Mono", monospace;
+
+    h3 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.8;
+    }
+
+    p {
+      width: 300px;
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+      font-size: 18px;
+      color: #4f4f4f;
+    }
+
+    a {
+      display: inline-block;
+      padding: 1.3rem 2rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: #333333;
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+    .text {
+      text-align: center;
+
+      h3 {
+        font-size: 3rem;
+      }
+
+      p {
+        width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+
+    .container {
+      margin-top: -3rem;
+      flex-direction: row;
+
+      img {
+        width: 30rem;
+        margin-right: 5rem;
+        margin-top: 3.5rem;
+      }
+    }
+  }
+}
+
+footer {
+  height: 35px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #bdbdbd;
+
+  a {
+    margin: 0;
+    padding: 0;
+
+    color: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
